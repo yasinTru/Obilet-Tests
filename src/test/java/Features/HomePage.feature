@@ -2,8 +2,8 @@
   Feature: Home and Login Pages
       @Home
     Scenario: Check Home Page Loaded
-      Given User on Home Page
-      Then User should see Home Page container
+      Given   User on Home Page
+      Then    User should see Home Page container
 
       @Ticket
     Scenario Outline: User enters Ticket informations
