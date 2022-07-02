@@ -4,6 +4,7 @@ import io.cucumber.java.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.Reporter;
 
+import java.net.MalformedURLException;
 import java.util.Properties;
 
 public class Hooks {
@@ -11,7 +12,7 @@ public class Hooks {
     WebDriver driver;
     Properties properties;
     @Before
-    public void before() {
+    public void before() throws MalformedURLException {
         String browser = Reporter.getCurrentTestResult().getTestContext().getCurrentXmlTest().getParameter("browser");
         properties = ConfigReader.initialize_Properties();
         driver = Framework.DriverSetup.initialize_Driver(browser);

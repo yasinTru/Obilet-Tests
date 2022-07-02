@@ -10,7 +10,7 @@ import org.testng.annotations.*;
 @CucumberOptions(
         features = {"src/test/java/Features"},
         glue = {"StepDefinitions", "Framework"},
-   //     tags = "@Home",
+        tags = "",
         plugin = {
                 "summary", "pretty", "html:Reports/CucumberReport/Reports.html",
                 "json:Reports/CucumberReport/Report",
