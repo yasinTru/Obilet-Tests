@@ -30,4 +30,19 @@ public class Helper {
         driver.findElement(elementName);
     }
 
+    public void sendKey(By elementName, String text)
+    {
+        findElement(elementName).sendKeys(text);
+    }
+
+    public void clickElement(By elementName)
+    {
+        findElement(elementName).click();
+    }
+
+    public void checkElement(By elementName)
+    {
+        findElement(elementName).isDisplayed();
+    }
+
 }
