@@ -13,6 +13,7 @@ Project's runner xml files in:
 
 - Java
 - Selenium
+- JMeter
 - İntellij Idea
 - Selenium Grid
 - Cucumber
