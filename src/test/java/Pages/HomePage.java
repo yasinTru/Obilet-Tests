@@ -36,7 +36,7 @@ public class HomePage {
 
     public void getHomePageUrl()
     {
-        String homePageUrl="En Ucuz Otobüs Bileti Fiyatları, Online Otobüs Bileti Al - obilet.com";
+        String homePageUrl="Ucuz Otobüs Bileti Fiyatları, Otobüs Bileti Al - obilet.com";
         String currentUrl= driver.getTitle();
         Assert.assertEquals(homePageUrl,currentUrl);
         System.out.println(homePageUrl);

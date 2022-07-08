@@ -27,10 +27,10 @@
       When  User click Uye Girisi button
       Then  User see Login Page opens
       When  User enters "<wrongEmail>" email
-        Then  Should see "<loginEmailError>" email error message
-      When   User enters "<wrongPassword>" password
-        When  User clicks Giris Yap button
-        Then Should see "<loginPasswordError>" password error message
+      Then  Should see "<loginEmailError>" email error message
+      When  User enters "<wrongPassword>" password
+      When  User clicks Giris Yap button
+      Then Should see "<loginPasswordError>" password error message
 
 
       Examples:

@@ -38,8 +38,8 @@ public class LoginPageSteps {
     }
 
     @Then("Should see {string} email error message")
-    public void should_see_email_error_message(String actualEmailError) {
-
+    public void should_see_email_error_message(String actualEmailError) throws InterruptedException {
+        Thread.sleep(2000);
         loginPage.getEmailErrorMessage(actualEmailError);
 
     }
